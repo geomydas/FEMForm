@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Contact form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="example.com" method="post">
+        <div class="grid">
+          <label for="firstname"
+            ><h2>First Name</h2>
+            <input type="text" id="firstname" name="lastname" required /></label
+          ><label for="lastname"
+            ><h2>Last Name</h2>
+            <input type="text" id="lastname" name="lastname" required
+          /></label>
+        </div>
+        <label for="email"
+          ><h2>Email Address</h2>
+          <input type="email" id="email" name="email" required
+        /></label>
+        <h2 aria-labelledby="querytype">Query Type</h2>
+        <div class="grid querytype" id="querytype">
+          <label for="general"
+            ><input
+              type="radio"
+              checked
+              id="general"
+              name="querytype"
+              value="general"
+            />General Enquiry </label
+          ><label for="support"
+            ><input
+              type="radio"
+              id="support"
+              name="querytype"
+              value="support"
+            />Support Request
+          </label>
+        </div>
+        <label for="message"
+          ><h2>Message</h2>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            class="message" /></label
+        ><label for="consent" class="consent"
+          ><input type="checkbox" name="consent" id="consent" value="consent" />
+          <h2>I consent to being contacted by the team</h2></label
+        ><button>Submit</button>
+      </form>
+    </main>
+ 
+  </body>
+</html>
